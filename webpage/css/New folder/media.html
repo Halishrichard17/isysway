@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .box {
+            width: 100%;
+            padding: 20px;
+            margin: 10px 0;
+            color: white;
+        }
+
+        .box1 {
+            background-color: lightblue;
+        }
+
+        .box2 {
+            background-color: lightcoral;
+        }
+
+        .box3 {
+            background-color: lightgreen;
+        }
+
+        /* Media query for tablets in portrait mode */
+        @media (orientation: portrait) {
+            .container {
+                width: 10%;
+                background-color: red;
+            }
+
+            .box {
+                width: 45%;
+                display: inline-block;
+                vertical-align: top;
+                margin: 10px 2.5%;
+            }
+        }
+
+        /* Media query for tablets in landscape mode and small desktops */
+        @media (min-width: 768px) {
+            .container {
+                width: 70%;
+            }
+
+            .box {
+                width: 30%;
+                margin: 10px 1.6666%;
+            }
+        }
+
+        /* Media query for large desktops */
+        @media (min-width: 1024px) {
+            .container {
+                width: 60%;
+            }
+
+            .box {
+                width: 22%;
+                margin: 10px 1.5%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+</body>
+</html>

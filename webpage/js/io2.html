@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input and Output Example</title>
+</head>
+<body>
+    <button onclick="showAlert()">Alert</button>
+    <button onclick="showConfirm()">Confirm</button>
+    <button onclick="showPrompt()">Prompt</button>
+    <p id="output"></p>
+
+    <script>
+        function showAlert() {
+            alert("This is an alert box!");
+        }
+
+        function showConfirm() {
+            let result = confirm("Do you want to proceed?");
+            if (result) {
+                document.getElementById("output").textContent = "User chose to proceed.";
+                console.log("User chose to proceed.");
+            } else {
+                document.getElementById("output").textContent = "User chose not to proceed.";
+                console.log("User chose not to proceed.");
+            }
+        }
+
+        function showPrompt() {
+            let userInput = prompt("Please enter your name:");
+            if (userInput !== null) {
+                document.getElementById("output").textContent = `Hello, ${userInput}!`;
+                console.log(`User entered: ${userInput}`);
+            } else {
+                document.getElementById("output").textContent = "User cancelled the prompt.";
+                console.log("User cancelled the prompt.");
+            }
+        }
+    </script>
+</body>
+</html>
+

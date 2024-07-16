@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float Example</title>
+    <style>
+        .container {
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 100px;
+        }
+        
+        .left {
+            float: left;
+        }
+        
+        .right {
+            float: right;
+        }
+        
+        .none {
+            float: none;
+        }
+        
+        .parent {
+            float: right;
+        }
+        
+        .child {
+            float: inherit;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box left">Left</div>
+        <div class="box none">None</div>
+    </div>
+    
+    <div class="container">
+        <div class="box right">Right</div>
+        <div class="box none">None</div>
+    </div>
+    
+    <div class="container parent">
+        <div class="box child">Inherit</div>
+    </div>
+</body>
+</html>

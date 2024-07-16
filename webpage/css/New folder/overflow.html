@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Example</title>
+    <style>
+        .container {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            margin: 20px;
+            padding: 10px;
+            display: inline-block;
+        }
+        
+        .visible {
+            overflow: visible;
+            background-color: lightblue;
+        }
+        
+        .hidden {
+            overflow: hidden;
+            background-color: lightcoral;
+        }
+        
+        .scroll {
+            overflow: scroll;
+            background-color: lightgreen;
+        }
+        
+        .auto {
+            overflow: auto;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="container visible">
+        <p>lThis is an example of overflow: visible. The content is not clipped and will render outside the element's box.</p>
+    </div>
+
+    <div class="container hidden">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolores minima tempore doloribus, nam ut magni, temporibus iure aperiam nulla odio at et. Necessitatibus suscipit rem unde illum magnam numquam.This is an example of overflow: hidden. The overflow is clipped, and the rest of the content will be invisible.</p>
+    </div>
+
+    <div class="container scroll">
+        <p>This is an example of overflow: scroll. The overflow is clipped, and a scrollbar is added to see the rest of the content.</p>
+    </div>
+
+    <div class="container auto">
+        <p>This is an example of overflow: auto. It adds scrollbars only when necessary.</p>
+    </div>
+</body>
+</html>

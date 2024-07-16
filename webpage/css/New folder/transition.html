@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition Example</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            opacity: 1;
+            /* transition-property: opacity, transform;
+            transition-duration: 6s, 0.5s;
+            transition-timing-function: ease;
+            transition-delay: 0s, 0.2s; */
+            transition: transform 6s  linear ;
+        }
+
+        .box:hover {
+            opacity: 0.5;
+            transform: rotate(50deg);
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

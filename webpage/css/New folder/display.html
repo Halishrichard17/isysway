@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property Examples</title>
+    <style>
+        div{
+            background-color: rgb(226, 184, 129);
+        }
+        .description {
+            font-family: Arial, sans-serif;
+            color: yellow;
+            background-color: black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .example-container {
+            margin-bottom: 20px;
+        }
+        .block-example {
+            display: block;
+            width: 100%;
+            background-color: lightblue;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .inline-example {
+            display: inline;
+            background-color: lightgreen;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .inline-block-example {
+            display: inline-block;
+            background-color: lightcoral;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        .flex-container {
+            display: flex;
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+        }
+        .flex-item {
+            background-color: lightpink;
+            padding: 10px;
+            margin: 5px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        .grid-item {
+            background-color: lightsteelblue;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<!-- <div>
+    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis id repellat nemo amet voluptate sunt odit culpa, dolorum corrupti mollitia voluptatibus asperiores quo. Blanditiis, a. Labore tempore a itaque aliquid!</div>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae. Qu
+    </div> -->
+</div>
+    <div class="description"><strong>block:</strong> The element generates a block-level box. It starts on a new line and takes up the full width available.</div>
+    <div class="example-container">
+        <div class="block-example">Block Example 1</div>
+        <div class="block-example">Block Example 2</div>
+    </div>
+
+    <div class="description"><strong>inline:</strong> The element generates an inline-level box. It does not start on a new line and only occupies the space necessary for its content.</div>
+    <div class="example-container">
+        <span class="inline-example">Inline Example 1</span>
+        <span class="inline-example">Inline Example 2</span>
+    </div>
+
+    <div class="description"><strong>inline-block:</strong> The element generates a combination of inline and block-level behavior. It flows as an inline-level element but allows width, height, padding, and margin settings.</div>
+    <div class="example-container">
+        <span class="inline-block-example">Inline-Block Example 1</span>
+        <span class="inline-block-example">Inline-Block Example 2</span>
+    </div>
+
+    <div class="description"><strong>none:</strong> The element is not displayed on the page. It is completely removed from the document flow and occupies no space.</div>
+    <div class="example-container">
+        <div style="display: none;">None Example (You won't see this)</div>
+    </div>
+
+    <div class="description"><strong>flex:</strong> The element becomes a flexible container. It enables flexible layouts using flexbox, allowing easy alignment and distribution of child elements.</div>
+    <div class="example-container flex-container">
+        <div class="flex-item">Flex Item 1</div>
+        <div class="flex-item">Flex Item 2</div>
+        <div class="flex-item">Flex Item 3</div>
+    </div>
+
+    <div class="description"><strong>grid:</strong> The element becomes a grid container. It enables grid-based layouts using CSS grid, providing powerful grid-based alignment and positioning capabilities.</div>
+    <div class="example-container grid-container">
+        <div class="grid-item">Grid Item 1</div>
+        <div class="grid-item">Grid Item 2</div>
+        <div class="grid-item">Grid Item 3</div>
+    </div>
+</body>
+</html>

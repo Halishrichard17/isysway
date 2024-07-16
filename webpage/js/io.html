@@ -1,0 +1,15 @@
+<input type="text" id="nameInput" />
+<button onclick="getInput()">Submit</button>
+
+<script>
+    function getInput() {
+        let input = document.getElementById("nameInput").value;
+        console.log("User input:", input);
+    }
+</script>
+
+<p id="output"></p>
+
+<script>
+    document.getElementById("output").textContent = "Hello, World!";
+</script>

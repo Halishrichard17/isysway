@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .box {
+            width: 100%;
+            height: 100px;
+            margin: 20px 0;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+        }
+
+        /* Base style */
+        .box1 {
+            background-color: lightblue;
+        }
+
+        .box2 {
+            background-color: lightcoral;
+        }
+
+        .box3 {
+            background-color: lightgreen;
+        }
+
+        .box4 {
+            background-color: lightyellow;
+        }
+
+        .box5 {
+            background-color: lightpink;
+        }
+
+        /* Media query for viewport width */
+        @media (min-width: 600px) {
+            .box1 {
+                background-color: rgb(83, 45, 45);
+            }
+        }
+
+        /* Media query for viewport height */
+        @media (min-height: 500px) {
+            .box2 {
+                background-color: lightyellow;
+            }
+        }
+
+        /* Media query for device width */
+        @media screen and (min-device-width: 768px) {
+            .box3 {
+                background-color: lightcoral;
+            }
+        }
+
+        /* Media query for device height */
+        @media screen and (min-device-height: 800px) {
+            .box4 {
+                background-color: lightblue;
+            }
+        }
+
+        /* Media query for orientation */
+        @media (orientation: po) {
+            .box5 {
+                background-color: rgb(167, 43, 43);
+            }
+        }
+
+        /* Media query for resolution */
+        @media (min-resolution: 2dppx) {
+            .box1 {
+                background-color: lightpink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">Viewport Width & Resolution</div>
+    <div class="box box2">Viewport Height</div>
+    <div class="box box3">Device Width</div>
+    <div class="box box4">Device Height</div>
+    <div class="box box5">Orientation</div>
+</body>
+</html>

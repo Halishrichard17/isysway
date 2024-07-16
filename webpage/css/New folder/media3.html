@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Types Example</title>
+    <style>
+        /* This applies to all media types */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* This applies only when printing */
+        @media print {
+            body {
+                font-size: 12pt;
+                color: rgb(216, 59, 59);
+            }
+        }
+
+        /* This applies to screens (computers, tablets, smartphones) */
+        @media screen {
+            body {
+                font-size: 16px;
+                color: #333;
+            }
+        }
+
+        /* This applies to speech (screen readers) */
+        @media speech {
+            body {
+                font-size: 14px;
+                line-height: 1.5;
+                color: rgb(30, 255, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Media Types Example</h1>
+    <p>This page demonstrates the use of different media types in CSS.</p>
+    <p>Try printing this page, or using a screen reader to see the different styles in action.</p>
+</body>
+</html>

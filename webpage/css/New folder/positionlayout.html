@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Property Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .description {
+            color: yellow;
+            background-color: black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .example-container {
+            margin-bottom: 40px;
+            border: 1px solid black;
+            padding: 20px;
+            position: relative;
+        }
+        .static-example {
+            position: static;
+            background-color: lightblue;
+            padding: 10px;
+            margin-bottom: 100px;
+        }
+        .relative-example {
+            position: relative;
+            top: 200px;
+            background-color: lightgreen;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .fixed-example {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: lightcoral;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .absolute-example {
+            position: absolute;
+            top: 50px;
+            left: 0px;
+            background-color: lightgoldenrodyellow;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .sticky-example {
+            /* position: -webkit-sticky; For Safari */
+            position: sticky;
+            top: 0;
+            background-color: lightpink;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="description"><strong>static:</strong> The default position; the element is positioned according to the normal flow of the document.</div>
+    <div class="example-container">
+        <div class="static-example">Static Example</div>
+    </div>
+
+    <div class="description"><strong>relative:</strong> The element is positioned relative to its normal position.</div>
+    <div class="example-container">
+        <div class="relative-example">Relative Example</div>
+    </div>
+
+    <div class="description"><strong>fixed:</strong> The element is positioned relative to the browser window.</div>
+    <div class="example-container">
+        <div class="fixed-example">Fixed Example</div>
+    </div>
+
+    <div class="description"><strong>absolute:</strong> The element is positioned relative to the nearest positioned ancestor.</div>
+    <div class="example-container">
+        <div class="absolute-example">Absolute Example</div>
+    </div>
+
+    <div class="description"><strong>sticky:</strong> The element is positioned based on the user's scroll position.</div>
+    <div class="example-container">
+        <div class="sticky-example">Sticky Example</div>
+    </div>
+</body>
+</html>

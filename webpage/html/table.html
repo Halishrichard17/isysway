@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="solid"> <!-- starts the table -->
+        <caption>Sample Table</caption> 
+        <tfoot>
+          <tr>
+            <td>Sum</td>
+            <td>$180</td>
+          </tr>
+        </tfoot><!-- gives the table a caption -->
+        <thead> <!-- groups the header row -->
+          <tr> <!-- defines a row -->
+            <th colspan="">Header 1</th> <!-- defines the first header cell -->
+            <th>Header 3</th> <!-- defines the second header cell -->
+          </tr>
+        </thead>
+        <tbody> <!-- groups the body content of the table -->
+        
+          <tr> <!-- defines another row -->
+            <td colspan="2" rowspan="2">Data 3</td> <!-- defines the first data cell in the second row -->
+            <td>Data 4</td> <!-- defines the second data cell in the second row -->
+          </tr>
+          <tr> <!-- defines a row -->
+            <td >Data 1</td> <!-- defines the first data cell -->
+            <td>Data 2</td> <!-- defines the second data cell -->
+          </tr>
+        </tbody>
+      
+      </table>
+      
+</body>
+</html>
